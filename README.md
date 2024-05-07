@@ -19,11 +19,27 @@ All the following steps assume that they are executed under these conditions.
 
 ## Preparation
 
-First, we have to download all datasets by running 
+First, clone the repo by running
+```bash
+git clone git@github.com:ARG-NCTU/liquid_time_constant_networks.git
+```
+
+Second, we have to download all datasets by running 
+```bash
+cd ~/liquid_time_constant_networks/experiments_with_ltcs
+```
 ```bash
 source download_datasets.sh
 ```
 This script creates a folder ```data```, where all downloaded datasets are stored.
+
+Third, run docker by running
+```bash
+cd ~/liquid_time_constant_networks/Docker
+```
+```bash
+source docker_run.sh
+```
 
 ## Training and evaluating the models 
 
@@ -47,8 +63,12 @@ All results are stored in the ```results``` folder by appending the result to CS
 
 For example, we can train and evaluate the CT-RNN by executing
 ```bash
+cd ~/liquid_time_constant_networks/experiments_with_ltcs
+```
+```bash
 python3 har.py --model ctrnn
 ```
+
 After the script is finished there should be a file ```results/har/ctrnn_32.csv``` created, containing the following columns:
 - ```best epoch```: Epoch number that achieved the best validation metric
 - ```train loss```: Training loss achieved at the best epoch

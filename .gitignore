@@ -1,0 +1,10 @@
+__pycache__
+results
+experiments_with_ltcs/data/gesture
+experiments_with_ltcs/data/har
+experiments_with_ltcs/data/occupancy
+experiments_with_ltcs/data/ozone
+experiments_with_ltcs/data/person
+experiments_with_ltcs/data/power
+experiments_with_ltcs/data/traffic
+tf_sessions

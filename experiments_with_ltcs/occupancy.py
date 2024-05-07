@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # Run on CPU
+# os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # Run on CPU
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'  # Run on GPU
 
 import tensorflow as tf
 import ltc_model as ltc
